@@ -4,6 +4,17 @@ body {
     background-color: #e9edf2;
     font-family: Arial, Helvetica, sans-serif;
 }
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+/* Subtitle */
+body.dark h2 {
+  color: #4da3ff; /* accessible blue */
+}
+
+/* Logo change handled by JS */
 
 .mission-box {
     max-width: 800px;
