@@ -17,7 +17,7 @@ function changeTheme() {
         pageContent.style.fontFamily = "'Big Caslon', serif";
     } else {
         // default
-        document.body.style.backgroundImage = "none";
+        document.body.style.backgroundImage = "black";
         pageContent.style.fontFamily = "Georgia, serif";
         
     }
