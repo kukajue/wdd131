@@ -1,8 +1,9 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
   font-family: Roboto, sans-serif;
 }
 header,
@@ -14,10 +15,7 @@ footer {
   padding: 1rem;
   background-color: lightblue;
 }
-main{
-    display: grid;
-    grid-template-columns: 1fr;
-}
+
 h1 {
     text-align: center;
 }
@@ -27,9 +25,17 @@ section {
   margin: 1em;
   border: 1px solid #ccc;
 }
+
 nav a {
     padding: 20px;
     color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid gray;
+
+}
+.hide{
     display: none;
 }
 nav a:hover {
@@ -46,33 +52,41 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: 0.4s;
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.change .bar1 {
+  transform: translate(0, 8.5px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -8.5px) rotate(45deg);
 }
 footer {
     text-align: center;
 }
 
 @media screen and (min-width: 700px) {
- main{
-    grid-template-columns: 1fr 1fr;
- }
- .menu-btn{
-    display: none;
- }
- nav a{
-    display: inline;
- }
- nav{
-    text-align: right;
- }
-}
-
-
-@media screen and (min-width: 1000px) {
-     main{
-    grid-template-columns: 1fr 1fr 1fr;
- }
-
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }  
+    .menu-btn {
+        display: none;
+    }
+    nav a {
+        display: inline;
+    }
+    nav {
+        text-align: right;
+    }
 }
           
-          
-          
+                
