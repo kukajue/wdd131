@@ -10,7 +10,7 @@ let list =document.querySelector('list');
 
 list.style.border = '3px solid black';
 
-let para = document.querySelector('p');
+let para = document.querySelector('p');ZZZZZZ
 
 // para.style.backgroundColor = 'lightblue';
 para.classList.add('background');
